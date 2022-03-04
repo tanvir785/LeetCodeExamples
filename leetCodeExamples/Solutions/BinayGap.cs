@@ -1,13 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace test1.Solutions
 {
     public class BinayGap
     {
-        public string convertToBinary (int x)
+        public string convertToBinary(int x)
         {
             int remainder = 0;
             if (x == 0)
@@ -30,10 +28,10 @@ namespace test1.Solutions
             //    int result = x / 2;
             //    convertToBinary(result);
             //}
-            return remainder + convertToBinary(x/2);
+            return remainder + convertToBinary(x / 2);
         }
 
-        public int findMaxBinarygap (string x)
+        public int findMaxBinarygap(string x)
         {
             var binaryGapLengths = new List<int>();
 
@@ -55,7 +53,7 @@ namespace test1.Solutions
                 }
             }
 
-            if(binaryGapLengths.Count > 0)
+            if (binaryGapLengths.Count > 0)
             {
                 return binaryGapLengths.Max();
             }

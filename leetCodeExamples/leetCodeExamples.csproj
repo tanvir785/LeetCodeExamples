@@ -42,6 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CSharpTest\LambdaExpressTest.cs" />
+    <Compile Include="LinkedList\Node.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Solutions\Agoda.cs" />
@@ -56,15 +58,21 @@
     <Compile Include="Solutions\findBiggestNumbersMatrix.cs" />
     <Compile Include="Solutions\FindPalindrome.cs" />
     <Compile Include="Solutions\FizzBuzz.cs" />
+    <Compile Include="CSharpTest\GenericsTest.cs" />
     <Compile Include="Solutions\LargestNum.cs" />
-    <Compile Include="Solutions\Node.cs" />
     <Compile Include="Solutions\OldConsole.cs" />
     <Compile Include="Solutions\PivotIndex.cs" />
     <Compile Include="Solutions\SpicyChicken.cs" />
+    <Compile Include="Stacks\Stack.cs" />
     <Compile Include="Solutions\SwapNumbers.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Graphs\" />
+    <Folder Include="Queues\" />
+    <Folder Include="Trees\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
